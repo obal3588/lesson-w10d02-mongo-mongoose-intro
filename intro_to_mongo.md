@@ -89,7 +89,7 @@ Let's use three terminal tabs. One to keep bash open and available, open a new o
 
 In terminal, type `mongod`. 
 
-**NOTE**- if you used `brew` to install then type `brew services start mongodb`
+**NOTE**- If you used `brew` to install then type `brew services start mongodb`. With brew, the mongo dameon will always run in the background. There is no need to keep a Terminal tab open.
 
 A bunch of text should come up, but in version 3.6.3, the final line says
 

@@ -2,7 +2,9 @@
 
 ## Install with Homebrew
 
-### [Homebrew: The missing package manager for macOS](https://brew.sh/)
+- [Homebrew: The missing package manager for macOS](https://brew.sh/)
+- [Mongo Manual Install](https://docs.mongodb.com/manual/installation/)
+
 
 * Check if homebrew is installed: `brew`
 
@@ -13,7 +15,7 @@
 
 ## Set data location
 
-In terminal type `mongod` to run the mongo server.
+In terminal type `brew services start mongodb` to run the mongo server.
 
 You will probably get an error saying
 > "Data directory `/data/db` not found., terminating"
