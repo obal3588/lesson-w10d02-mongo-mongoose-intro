@@ -6,10 +6,10 @@
 1. Connect to Mongo via text editor
 1. Create a Schema for a collection
 1. Create a model and save it
-1. find a specific model
-1. update a model already in the database
-1. remove a model already in the database
-1. combine actions
+1. Find a specific model
+1. Update a model already in the database
+1. Remove a model already in the database
+1. Combine actions
 
 ## Explain what is an ODM/ Intro to Mongoose
 ODM stand for Object Document Model. It translates the documents in Mongo into upgraded JavaScript Objects that have more helpful methods and properties when used in conjunction with express.
@@ -42,7 +42,6 @@ const articleSchema = new Schema({
 ```
 
 ## Basic Set Up
-In `student_examples`
 
 - `mkdir intro_to_mongoose`
 - `cd intro_to_mongoose`
@@ -50,7 +49,7 @@ In `student_examples`
 - `npm init -y` and go through the prompts
 - `npm i mongoose`
 - `touch tweet.js`
--  `atom .`
+-  `code .`
 
 
 ## Set Up Mongoose
@@ -71,7 +70,7 @@ const Tweet = require('./tweet.js');
 
 ```js
 // Global configuration
-const mongoURI = 'mongodb://localhost:27017/'+ 'tweets';
+const mongoURI = 'mongodb://localhost:27017/tweets';
 const db = mongoose.connection;
 ```
 
@@ -131,12 +130,12 @@ const mongoose = require('mongoose');
 const Tweet = require('./tweet.js');
 
 // Global Configuration
-const mongoURI = 'mongodb://localhost:27017/'+ 'tweets';
+const mongoURI = 'mongodb://localhost:27017/tweets';
 const db = mongoose.connection;
 
 // Connect to Mongo
-mongoose.connect(mongoURI, { useNewUrlParser: true}, () => {
-	console.log('the connection with mongod is established')
+mongoose.connect(mongoURI, { useNewUrlParser: true }, () => {
+  console.log('the connection with mongod is established')
 })
 
 // Connection Error/Success - optional but can be helpful
