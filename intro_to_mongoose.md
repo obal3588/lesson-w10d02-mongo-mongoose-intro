@@ -93,7 +93,7 @@ Warnings are ok, it'll still work, for now. But in later versions it may stop wo
 This should clear up the errors:
 
 ```js
-mongoose.connect(mongoURI, { useNewUrlParser: true}, () => {
+mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true}, () => {
 	console.log('the connection with mongod is established')
 })
 ```
