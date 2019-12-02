@@ -36,7 +36,6 @@ MongoDB is a database that holds JavaScript Objects. The database itself is an a
 Mongo is designed to be a database that is flexible and easily scalable.
 
 
-[Our Cheatsheet](../../../../../wiki/Mongo-Cheatsheet)
 
 ## Mongo Sub-Databases
 
